@@ -1794,12 +1794,13 @@ input, select, textarea {
 /* List */
 
 	ul {
-		list-style: disc;
+		list-style: circle;
 		padding-left: 1em;
 	}
 
 		ul li {
 			padding-left: 0.5em;
+			color: #290406
 		}
 
 	ol {

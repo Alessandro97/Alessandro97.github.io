@@ -6,6 +6,49 @@
 -->
 <html>
 	<head>
+		<style>
+			#top h2.alt {
+				background: linear-gradient(to right, #290406, #8b0000);
+				color: white;
+				padding: 10px;
+				border-radius: 10px;
+			}
+		</style>
+
+		<style>
+			/* Common styles for both lists */
+			ul {
+				list-style-type: none;
+				padding-left: 0;
+				margin-top: 10px;
+			}
+
+			#conference-list, #thesis-list {
+				display: none;
+				opacity: 0;
+				transition: opacity 0.3s ease;
+			}
+
+			#conference-list.visible, #thesis-list.visible {
+				display: block;
+				opacity: 1;
+			}
+
+			button {
+				padding: 10px;
+				background-color: #4CAF50;
+				color: white;
+				border: none;
+				cursor: pointer;
+				margin: 10px 0;
+			}
+
+			button:hover {
+				background-color: #45a049;
+			}
+		</style>
+
+
 		<title>Alessandro Traspadini</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -20,9 +63,9 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<img src="images/myself.jpeg"  width="150" height="auto" />
+							<img src="images/myself.jpeg" width="150" height="auto" style="border-radius: 50%" />
 							<h1 id="title">Alessandro Traspadini</h1>
-							<p>Telecommunication engineer and Postgraduate Researcher <a href="http://www.unipd.it/en">@UNIPD</a> </p>
+							<p>Telecommunication engineer<br>and Ph.D. Student <a href="http://www.unipd.it/en">@UNIPD</a> </p>
 						</div>
 
 					<!-- Nav -->
@@ -57,8 +100,8 @@
 					<section id="top", class="one dark cover">
 						<div class="container">
 							<header>
-								<h2 class="alt">ALESSANDRO TRASPADINI</h2>
-								<p> Postgraduate Researcher at the <a href="https://www.dei.unipd.it/en/" >Department of Information Engineering</a> <br>
+								<h2 class="alt"><strong>ALESSANDRO TRASPADINI</strong></h2>
+								<p> Ph.D. Student at the <a href="https://www.dei.unipd.it/en/" >Department of Information Engineering</a> <br>
 								of the <a href="https://www.unipd.it/en">University of Padova</a></p>
 							</header>
 
@@ -128,9 +171,57 @@
 							</header>
 							
 							<div align="left">
-								<ul>
-									<li style="color:#290406"> Conference Papers</li>
-									<ul>
+								<button onclick="toggleList('conference-list')">Conference & Journal Papers</button>
+   									<ul id="conference-list">
+										<li style="margin-bottom:1cm">
+											<div style="color:black">
+												S. Baldoni, F. Battisti, F. Chiariotti, F. Mistrorigo, A. B. Shofi, P. Testolina, A. Traspadini, 
+												A. Zanella, and M. Zorzi. Apr. 2024. Questset: A VR Dataset for Network and Quality of 
+												Experience Studies. In Proceedings of the 15th ACM Multimedia Systems Conference (MMSys '24). 
+												Association for Computing Machinery, New York, NY, USA.
+											</div>									
+											<div style="color: #290406">
+												<a href="https://dl.acm.org/doi/abs/10.1145/3625468.3652187">Link</a>
+											</div>
+										</li>
+
+
+										<li style="margin-bottom:1cm">
+											<div style="color:black">
+												A. Traspadini, M. Giordani, G. Giambene, T. De Cola and M. Zorzi, 
+												"On the Energy Consumption of UAV Edge Computing in Non-Terrestrial Networks," 
+												2023 57th Asilomar Conference on Signals, Systems, and Computers, 
+												Pacific Grove, CA, USA, Dec. 2023.
+											</div>									
+											<div style="color: #290406">
+												<a href="https://ieeexplore.ieee.org/abstract/document/10476934">Link</a>
+											</div>
+										</li>
+
+										<li style="margin-bottom:1cm">
+											<div style="color:black">
+												A. Traspadini, M. Giordani, G. Giambene and M. Zorzi,
+												"Real-Time HAP-Assisted Vehicular Edge Computing for Rural 
+												Areas," in IEEE Wireless Communications Letters, 
+												vol. 12, no. 4, pp. 674-678, April 2023.
+											</div>									
+											<div style="color: #290406">
+												<a href="https://ieeexplore.ieee.org/abstract/document/10024371">Link</a>
+											</div>
+										</li>
+
+										<li style="margin-bottom:1cm">
+											<div style="color:black">
+												D. Wang, A. Traspadini, M. Giordani, M. -S. Alouini and M. Zorzi,
+												"On the Performance of Non-Terrestrial Networks to
+												Support the Internet of Things," 2022 56th Asilomar Conference on Signals, Systems, 
+												and Computers, Pacific Grove, CA, USA, Nov. 2022.
+											</div>									
+											<div style="color: #290406">
+												<a href="https://ieeexplore.ieee.org/abstract/document/10052102">Link</a>
+											</div>
+										</li>
+
 										<li style="margin-bottom:1cm">
 											<div style="color:black">
 												A. Traspadini, M. Giordani and M. Zorzi,
@@ -143,22 +234,10 @@
 												<a href="https://ieeexplore.ieee.org/document/9815734">Link</a>
 											</div>
 										</li>
-										
-										<li style="margin-bottom:1cm">
-											<div style="color:black">
-												P. Testolina, M. Lecci, A. Traspadini and M. Zorzi,
-												 "An Open Framework to Model Diffraction by Dynamic Blockers in Millimeter Wave Simulations,"
-												  2022 20th Mediterranean Communication and Computer Networking Conference (MedComNet),
-												   2022, pp. 9-17, doi: 10.1109/MedComNet55087.2022.9810361.
-											</div>									
-											<div style="color: #290406">
-												<a href="https://ieeexplore.ieee.org/abstract/document/9810361">Link</a>
-											</div>
-										</li>
 									</ul>
-									
-									<li style="color:#290406"> Thesis </li>
-									<ul>
+								<button onclick="toggleList('thesis-list')">Thesis</button>
+									<ul id="thesis-list">
+										
 										<li style="margin-bottom:1cm">
 											<div style="color:black">
 											Master's thesis: "Scheduling for MU-MIMO using hybrid analog and digital
@@ -178,7 +257,6 @@
 											</div>
 										</li>
 									</ul>
-								</ul>
 							</div>
 
 						</div>
@@ -228,6 +306,27 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+					anchor.addEventListener('click', function (e) {
+						e.preventDefault();
+						document.querySelector(this.getAttribute('href')).scrollIntoView({
+							behavior: 'smooth'
+						});
+					});
+				});
+			</script>
+
+			<script>
+				function toggleList(id) {
+					const list = document.getElementById(id);
+					const isVisible = list.classList.toggle('visible');
+					list.setAttribute('aria-hidden', !isVisible);
+					const button = document.querySelector(button[onclick="toggleList('${id}')"]);
+					button.setAttribute('aria-expanded', isVisible);
+				}
+			</script>
 
 	</body>
 </html>

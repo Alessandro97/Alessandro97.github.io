@@ -131,3 +131,5 @@ const navMap=[...document.querySelectorAll('.nav-links a[href^="#"]')];
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){const id=e.target.id;
   navMap.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+id));}});},{rootMargin:'-45% 0px -50% 0px'});
 ['hero','research','publications','education','contact'].forEach(id=>{const el=document.getElementById(id);if(el)obs.observe(el);});
+const revObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');revObs.unobserve(e.target);}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>revObs.observe(el));

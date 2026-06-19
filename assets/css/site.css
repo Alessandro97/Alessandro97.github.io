@@ -93,3 +93,16 @@ img{max-width:100%;display:block}
 .edu-body h3{font-size:18px;margin:2px 0 2px}
 .edu-org{color:var(--violet);font-size:14px;margin-bottom:6px}
 .edu-body p{color:var(--muted);font-size:15px;max-width:760px}
+.inline-link{color:var(--crimson-light);font-weight:600}
+.contact-form{max-width:640px;display:flex;flex-direction:column;gap:14px;margin-top:10px}
+.form-row{display:flex;gap:14px}.form-row input{flex:1}
+.contact-form input,.contact-form textarea{width:100%;background:var(--glass);border:1px solid var(--glass-brd);
+  border-radius:12px;padding:14px 16px;color:#fff;font-size:15px;font-family:inherit;resize:vertical}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:rgba(255,255,255,.4)}
+.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:var(--crimson-light)}
+.contact-form .btn{align-self:flex-start;border:none;cursor:pointer}
+.contact-social{display:flex;gap:20px;font-size:22px;margin-top:26px}
+.contact-social a{color:var(--muted);transition:.2s}.contact-social a:hover{color:var(--crimson-light)}
+#site-footer{position:relative;z-index:5;text-align:center;padding:30px var(--pad);
+  color:var(--muted);font-size:14px;border-top:1px solid var(--glass-brd)}
+@media (max-width:560px){.form-row{flex-direction:column}}

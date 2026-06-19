@@ -133,3 +133,4 @@ const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){cons
 ['hero','research','publications','education','contact'].forEach(id=>{const el=document.getElementById(id);if(el)obs.observe(el);});
 const revObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');revObs.unobserve(e.target);}}),{threshold:.15});
 document.querySelectorAll('.reveal').forEach(el=>revObs.observe(el));
+document.getElementById('year').textContent=new Date().getFullYear();

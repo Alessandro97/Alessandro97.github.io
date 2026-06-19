@@ -121,3 +121,13 @@ let running = true;
 document.addEventListener('visibilitychange', ()=>{ running = !document.hidden; if(running && !prefersReduced) requestAnimationFrame(frame); });
 function start(){ if(prefersReduced){ frame(); return; } requestAnimationFrame(frame); }
 start();
+
+// mobile menu toggle
+const navToggle=document.querySelector('.nav-toggle'),navLinks=document.querySelector('.nav-links');
+navToggle.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');navToggle.setAttribute('aria-expanded',open);});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');navToggle.setAttribute('aria-expanded',false);}));
+// active section highlight
+const navMap=[...document.querySelectorAll('.nav-links a[href^="#"]')];
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){const id=e.target.id;
+  navMap.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+id));}});},{rootMargin:'-45% 0px -50% 0px'});
+['hero','research','publications','education','contact'].forEach(id=>{const el=document.getElementById(id);if(el)obs.observe(el);});

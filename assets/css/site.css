@@ -49,3 +49,19 @@ img{max-width:100%;display:block}
 .btn.ghost{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.03)}
 .btn.ghost:hover{background:rgba(255,255,255,.1)}
 @media (prefers-reduced-motion:reduce){.hero h1 .grad{animation:none}.ping{animation:none}}
+#nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;
+  justify-content:space-between;padding:14px var(--pad);
+  background:rgba(4,4,10,.45);backdrop-filter:blur(12px);border-bottom:1px solid var(--glass-brd)}
+#nav .logo{font-weight:800;font-size:20px}#nav .logo span{color:var(--crimson-light)}
+.nav-links{display:flex;gap:26px;list-style:none;align-items:center}
+.nav-links a{font-size:14px;color:var(--muted);transition:.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--text)}
+.nav-social{display:flex;gap:14px;font-size:16px}
+.nav-toggle{display:none;background:none;border:none;color:#fff;font-size:20px;cursor:pointer}
+@media (max-width:768px){
+  .nav-toggle{display:block}
+  .nav-links{position:fixed;inset:60px 0 auto 0;flex-direction:column;gap:18px;padding:24px var(--pad);
+    background:rgba(4,4,10,.96);backdrop-filter:blur(12px);transform:translateY(-120%);transition:transform .3s;border-bottom:1px solid var(--glass-brd)}
+  .nav-links.open{transform:none}
+  .nav-social{margin-top:6px}
+}

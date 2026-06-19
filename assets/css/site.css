@@ -85,3 +85,11 @@ img{max-width:100%;display:block}
 .pub-link{display:inline-block;margin-top:6px;font-size:13px;font-weight:600;color:var(--crimson-light)}
 .scholar-link{display:inline-block;margin-top:26px;font-weight:600;color:var(--crimson-light)}
 @media (max-width:560px){.pub{flex-direction:column;gap:8px}}
+.timeline{display:flex;flex-direction:column;gap:18px;border-left:2px solid rgba(255,107,107,.3);padding-left:26px}
+.edu{position:relative}
+.edu::before{content:"";position:absolute;left:-33px;top:6px;width:12px;height:12px;border-radius:50%;
+  background:var(--crimson);box-shadow:0 0 0 4px rgba(255,59,63,.2)}
+.edu-year{font-size:13px;font-weight:700;color:var(--crimson-light);letter-spacing:1px}
+.edu-body h3{font-size:18px;margin:2px 0 2px}
+.edu-org{color:var(--violet);font-size:14px;margin-bottom:6px}
+.edu-body p{color:var(--muted);font-size:15px;max-width:760px}

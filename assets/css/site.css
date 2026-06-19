@@ -23,3 +23,29 @@ img{max-width:100%;display:block}
   html{scroll-behavior:auto}
   .reveal{opacity:1;transform:none;transition:none}
 }
+#hero-bg{position:fixed;inset:0;z-index:0}
+.bg-glow{position:fixed;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(760px 300px at 25% 8%,rgba(170,10,10,.42),transparent),
+             radial-gradient(680px 340px at 100% 90%,rgba(124,58,237,.34),transparent)}
+.bg-veil{position:fixed;inset:0;z-index:2;pointer-events:none;
+  background:linear-gradient(90deg,rgba(4,4,10,.66) 0%,rgba(4,4,10,.32) 48%,rgba(4,4,10,.05) 100%)}
+.hero{position:relative;z-index:5;min-height:90vh;display:flex;flex-direction:column;
+  justify-content:center;max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+.pill{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;background:var(--glass);
+  border:1px solid rgba(255,255,255,.18);border-radius:30px;padding:7px 16px;font-size:13px;
+  margin-bottom:26px;backdrop-filter:blur(8px)}
+.ping{width:8px;height:8px;border-radius:50%;background:#27c93f;animation:ping 1.8s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(39,201,63,.6)}70%{box-shadow:0 0 0 10px rgba(39,201,63,0)}100%{box-shadow:0 0 0 0 rgba(39,201,63,0)}}
+.hero h1{font-size:clamp(44px,8vw,92px);line-height:.98;font-weight:900;letter-spacing:-2px}
+.hero h1 .grad{background:linear-gradient(110deg,#fff 20%,var(--crimson-light) 45%,var(--violet) 70%,#fff 90%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% auto;animation:shine 6s linear infinite}
+@keyframes shine{to{background-position:200% center}}
+.role{font-size:clamp(18px,2.6vw,24px);margin-top:20px;color:var(--text);opacity:.9}
+.role .rot{color:#ff8a8a;font-weight:700;transition:opacity .25s}
+.cta{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}
+.btn{padding:14px 26px;border-radius:12px;font-weight:700;font-size:15px;transition:.25s}
+.btn.primary{background:linear-gradient(135deg,var(--maroon),var(--crimson));box-shadow:0 10px 30px rgba(139,0,0,.5)}
+.btn.primary:hover{transform:translateY(-3px)}
+.btn.ghost{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.03)}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+@media (prefers-reduced-motion:reduce){.hero h1 .grad{animation:none}.ping{animation:none}}

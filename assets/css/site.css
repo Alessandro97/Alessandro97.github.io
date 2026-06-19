@@ -73,3 +73,15 @@ img{max-width:100%;display:block}
 .glass-card .card-ic{font-size:30px;margin-bottom:12px}
 .glass-card h3{font-size:18px;margin-bottom:8px}
 .glass-card p{font-size:14px;color:var(--muted)}
+.pub-list{list-style:none;display:flex;flex-direction:column;gap:14px}
+.pub{display:flex;gap:16px;align-items:flex-start;background:var(--glass);border:1px solid var(--glass-brd);
+  border-radius:14px;padding:18px 20px;transition:.25s}
+.pub:hover{border-color:rgba(255,107,107,.45);transform:translateX(4px)}
+.tag{flex:none;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;
+  padding:4px 10px;border-radius:20px;margin-top:2px}
+.tag.journal{background:rgba(167,139,250,.16);color:var(--violet)}
+.tag.conf{background:rgba(255,107,107,.16);color:var(--crimson-light)}
+.pub-body p{font-size:15px;color:var(--text)}.pub-body i{color:var(--muted)}
+.pub-link{display:inline-block;margin-top:6px;font-size:13px;font-weight:600;color:var(--crimson-light)}
+.scholar-link{display:inline-block;margin-top:26px;font-weight:600;color:var(--crimson-light)}
+@media (max-width:560px){.pub{flex-direction:column;gap:8px}}

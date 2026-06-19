@@ -63,17 +63,18 @@ Hero foreground: glass nav, status pill ("Non-Terrestrial Networks · 6G · Edge
 
 1. *5G NR non-terrestrial networks: from early results to the road ahead* — M. Figaro, F. Rossato, M. Giordani, A. Traspadini, T. Shimizu, C. Mahabal, et al. — **npj Wireless Technology**, 2026. [Journal]
 2. *End-to-End Simulation of 5G NR Integrated Access and Backhaul Networks for Remote Maritime Connectivity* — A. Traspadini, M. Pagin, R. Ihamouine, R. Lucas, A. Noren, M. Zorzi, et al. — **IEEE Transactions on Communications**, 2026. [Journal]
-3. *Sensing-Based Beamformed Resource Allocation in Standalone Millimeter-Wave Vehicular Networks* — A. Traspadini, A.A. Deshpande, M. Giordani, C. Mahabal, T. Shimizu, M. Zorzi — **ICC 2025 (IEEE International Conference on Communications)**. [Conference]
-4. *Performance Evaluation of Satellite-Based Data Offloading on Starlink Constellations* — A. Bonora, A. Traspadini, M. Giordani, M. Zorzi — **IEEE WCNC 2025**. [Conference]
-5. *Enhanced Time Division Duplexing Slot Allocation and Scheduling in Non-Terrestrial Networks* — A. Traspadini, M. Giordani, M. Zorzi — **57th/58th Asilomar 2024**. [Conference]
-6. *QuestSet: A VR dataset for network and quality of experience studies* — S. Baldoni, F. Battisti, F. Chiariotti, F. Mistrorigo, A.B. Shofi, P. Testolina, A. Traspadini, A. Zanella, M. Zorzi — **ACM MMSys 2024**. [Conference] — DOI 10.1145/3625468.3652187
-7. *On the energy consumption of UAV edge computing in non-terrestrial networks* — A. Traspadini, M. Giordani, G. Giambene, T. De Cola, M. Zorzi — **Asilomar 2023**. [Conference]
-8. *Real-time HAP-assisted vehicular edge computing for rural areas* — A. Traspadini, M. Giordani, G. Giambene, M. Zorzi — **IEEE Wireless Communications Letters** 12(4):674-678, 2023. [Journal]
-9. *On the performance of non-terrestrial networks to support the internet of things* — D. Wang, A. Traspadini, M. Giordani, M.-S. Alouini, M. Zorzi — **Asilomar 2022**. [Conference]
-10. *UAV/HAP-Assisted Vehicular Edge Computing in 6G: Where and What to Offload?* — A. Traspadini, M. Giordani, M. Zorzi — **EuCNC/6G Summit 2022**. [Conference] — DOI 10.1109/EuCNC/6GSummit54941.2022.9815734
-11. *An Open Framework to Model Diffraction by Dynamic Blockers in Millimeter Wave Simulations* — P. Testolina, M. Lecci, A. Traspadini, M. Zorzi — **MedComNet 2022**. [Conference]
+3. *Performance Evaluation of LoRa for IoT Applications in Non-Terrestrial Networks via ns-3* — A. Traspadini, M. Zorzi, M. Giordani — **IEEE GLOBECOM 2025** (on IEEE Xplore). [Conference]
+4. *Sensing-Based Beamformed Resource Allocation in Standalone Millimeter-Wave Vehicular Networks* — A. Traspadini, A.A. Deshpande, M. Giordani, C. Mahabal, T. Shimizu, M. Zorzi — **ICC 2025 (IEEE International Conference on Communications)**. [Conference]
+5. *Performance Evaluation of Satellite-Based Data Offloading on Starlink Constellations* — A. Bonora, A. Traspadini, M. Giordani, M. Zorzi — **IEEE WCNC 2025**. [Conference]
+6. *Enhanced Time Division Duplexing Slot Allocation and Scheduling in Non-Terrestrial Networks* — A. Traspadini, M. Giordani, M. Zorzi — **58th Asilomar 2024**. [Conference]
+7. *QuestSet: A VR dataset for network and quality of experience studies* — S. Baldoni, F. Battisti, F. Chiariotti, F. Mistrorigo, A.B. Shofi, P. Testolina, A. Traspadini, A. Zanella, M. Zorzi — **ACM MMSys 2024**. [Conference] — DOI 10.1145/3625468.3652187
+8. *On the energy consumption of UAV edge computing in non-terrestrial networks* — A. Traspadini, M. Giordani, G. Giambene, T. De Cola, M. Zorzi — **57th Asilomar 2023**. [Conference]
+9. *Real-time HAP-assisted vehicular edge computing for rural areas* — A. Traspadini, M. Giordani, G. Giambene, M. Zorzi — **IEEE Wireless Communications Letters** 12(4):674-678, 2023. [Journal]
+10. *On the performance of non-terrestrial networks to support the internet of things* — D. Wang, A. Traspadini, M. Giordani, M.-S. Alouini, M. Zorzi — **56th Asilomar 2022**. [Conference]
+11. *UAV/HAP-Assisted Vehicular Edge Computing in 6G: Where and What to Offload?* — A. Traspadini, M. Giordani, M. Zorzi — **EuCNC/6G Summit 2022**. [Conference] — DOI 10.1109/EuCNC/6GSummit54941.2022.9815734
+12. *An Open Framework to Model Diffraction by Dynamic Blockers in Millimeter Wave Simulations* — P. Testolina, M. Lecci, A. Traspadini, M. Zorzi — **MedComNet 2022**. [Conference]
 
-Excluded from the Publications section (per owner): the two arXiv preprints (*LoRa for IoT in NTN via ns-3*; *5G NR NTN: Open Challenges for Full-Stack Protocol Design*), the standalone *QuestSet* dataset entry, and the Ph.D. dissertation (the dissertation is shown under Education instead).
+Excluded from the Publications section (per owner): the arXiv preprint *5G NR NTN: Open Challenges for Full-Stack Protocol Design* (2026, confirmed still a preprint), the standalone *QuestSet* dataset entry, and the Ph.D. dissertation (the dissertation is shown under Education instead). No additional peer-reviewed papers are missing from Scholar. **Final count: 12 peer-reviewed papers.**
 
 > Note: exact DOIs/links for the newer papers (1–5, 7) are not all in hand; carry over the links present on the current site and add a Scholar link. Missing links can be filled later without blocking the build.
 
@@ -105,5 +106,5 @@ Excluded from the Publications section (per owner): the two arXiv preprints (*Lo
 
 - Page loads as a single static `index.html` with no console errors.
 - Animated satellite-comms hero renders and runs smoothly on desktop and mobile; static fallback under reduced-motion.
-- All sections present, content accurate (role updated, Zorzi spelling fixed, the 11 peer-reviewed publications listed and tagged Journal/Conference).
+- All sections present, content accurate (role updated, Zorzi spelling fixed, the 12 peer-reviewed publications listed and tagged Journal/Conference).
 - Existing CV/thesis PDFs and the contact form work.

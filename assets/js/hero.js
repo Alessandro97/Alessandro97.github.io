@@ -113,7 +113,7 @@ function frame(){
   if(running && !prefersReduced) requestAnimationFrame(frame);
 }
 
-const words=["Non-Terrestrial Networks","UAV & HAP Edge Computing","6G Connectivity","Satellite IoT","MIMO Beamforming"];
+const words=["Non-Terrestrial Networks","Integrated Access & Backhaul","UAV & HAP Edge Computing","6G Connectivity","Satellite IoT","MIMO Beamforming"];
 let wi=0;const el=document.getElementById('rot');el.style.transition='opacity .25s';
 setInterval(()=>{wi=(wi+1)%words.length;el.style.opacity=0;setTimeout(()=>{el.textContent=words[wi];el.style.opacity=1;},250);},2400);
 
